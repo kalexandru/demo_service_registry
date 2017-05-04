@@ -1,0 +1,12 @@
+server:
+  port: 8761
+eureka:
+    hostname: localhost
+    instance:
+      health-check-url-path: ${managment.contextPath}/info
+      status-page-url-path: ${managment.contextPath}/health
+    client:
+      registerWithEureka: false
+      fetchRegistry: false
+      server:
+        waitTimeInMsWhenSyncEmpty: 0
